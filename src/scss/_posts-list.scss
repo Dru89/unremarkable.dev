@@ -1,0 +1,11 @@
+.posts-list {
+  margin: 0;
+
+  & .post-title {
+    font-size: var(--font-size-heading-3);
+  }
+
+  & .read-more {
+    display: block;
+  }
+}

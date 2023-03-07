@@ -1,0 +1,6 @@
+src/ignore
+_site
+.DS_Store
+node_modules
+.env
+_cache

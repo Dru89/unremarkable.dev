@@ -1,0 +1,17 @@
+{
+  "title": "unremarkable.dev",
+  "url": "https://unremarkable.dev",
+  "domain": "unremarkable.dev",
+  "description": "Making (and breaking) stuff on the internet.",
+  "language": "en-US",
+  "author": {
+    "name": "Drew Hays",
+    "email": "drew@unremarkable.dev"
+  },
+  "feed": {
+    "path": "/feed.xml",
+    "filename": "feed.xml",
+    "url": "https://unremarkable.dev/feed.xml",
+    "id": "https://unremarkable.dev/"
+  }
+}

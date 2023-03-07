@@ -1,0 +1,22 @@
+{% extends "base.njk" %}
+{% block content %}
+<article>
+  <h1>{{ title }}</h1>
+  {% if subtitle -%}
+    <p class="post-subtitle">{{ subtitle }}</p>
+  {%- endif %}
+  <div class="post-meta">
+    <div class="post-meta--left">
+      <time datetime="{{ date | dateStamp }}">{{ date | dateHuman }}</time>
+      &bull;
+      <span class="readtime">{{ content | readtime }} to read</span>
+    </div>
+    <div class="post-meta--right tags">
+      
+    </div>
+  </div>
+  <div class="content">
+    {{ content | safe }}
+  </div>
+</article>
+{% endblock %}

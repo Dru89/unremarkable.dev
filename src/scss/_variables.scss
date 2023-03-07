@@ -1,0 +1,33 @@
+:root {
+  --background: #fafafa;
+  --body-color: #333333;
+  --body-color-secondary: #5e5e5e;
+  --link-color: var(--body-color);
+  --link-color-hover: var(--body-color);
+  --heading-color: var(--body-color);
+  --header-color: var(--body-color);
+  --blockquote-background: rgba(255, 255, 255, 0.5);
+  --blockquote-border-color: #333333;
+  --inline-code-color: #333333;
+  --inline-code-bg: #ebebeb;
+
+  --table-color: var(--body-color);
+  --table-bg: transparent;
+  --table-border-color: #c3c6c9;
+  --table-border-width: 1px;
+
+  --body-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --heading-font-family: var(--body-font-family);
+  --header-font-family: var(--monospace-font-family);
+  
+  --max-inline-size: 65ch;
+  --font-size-body: var(--step-0);
+  --font-size-heading-6: var(--step-0);
+  --font-size-heading-5: var(--step-0);
+  --font-size-heading-4: var(--step-1);
+  --font-size-heading-3: var(--step-1);
+  --font-size-heading-2: var(--step-2);
+  --font-size-heading-1: var(--step-3);
+  --font-size-header: var(--step-5);
+}

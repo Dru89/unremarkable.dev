@@ -1,0 +1,23 @@
+---
+layout: page.njk
+title: Find me online
+links:
+  - {name: "Mastodon", url: "https://social.lol/@dru89", class: "fab fa-mastodon"}
+  - {name: "GitHub", url: "https://github.com/dru89", class: "fab fa-github"}
+  - {name: "Instagram", url: "https://instagram.com/dru89", class: "fab fa-instagram"}
+  - {name: "LinkedIn", url: "https://linkedin.com/in/ashays", class: "fab fa-linkedin"}
+  - {name: "Twitter", url: "https://twitter.com/dru89", class: "fab fa-twitter"}
+  - {name: "RSS", url: "/feed.xml", class: "fas fa-square-rss"}
+  - {name: "Email", url: "mailto:drew@unremarkable.dev", class: "fas fa-at"}
+---
+
+<div class="content">
+<ul class="fa-ul social-links">
+{% for link in links -%}
+  <li>
+    <span class="fa-li social-icon"><i class="{{ link.class }}" aria-hidden="true"></i></span>
+    <a href="{{ link.url }}">{{link.name}}</a>
+  </li>
+{%- endfor %}
+</ul>
+</div>

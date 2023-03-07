@@ -1,0 +1,37 @@
+:root {
+  // From: https://utopia.fyi
+  // Scales are based on a 16px-18px font range for "step-0".
+
+  // Fluid Type Scale
+  // https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5,1.5|2|3|4|6,&g=s,l,xl,12
+  --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+  --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
+  --step-0: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --step-1: clamp(1.20rem, calc(1.13rem + 0.36vw), 1.41rem);
+  --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+  --step-3: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.20rem);
+  --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
+  --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
+
+  // Fluid Space Scale
+  // https://utopia.fyi/space/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5,1.5|2|3|4|6,&g=s,l,xl,12
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+  --space-2xs: clamp(0.50rem, calc(0.48rem + 0.11vw), 0.56rem);
+  --space-xs: clamp(0.75rem, calc(0.71rem + 0.22vw), 0.88rem);
+  --space-s: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --space-m: clamp(1.50rem, calc(1.43rem + 0.33vw), 1.69rem);
+  --space-l: clamp(2.00rem, calc(1.91rem + 0.43vw), 2.25rem);
+  --space-xl: clamp(3.00rem, calc(2.87rem + 0.65vw), 3.38rem);
+  --space-2xl: clamp(4.00rem, calc(3.83rem + 0.87vw), 4.50rem);
+  --space-3xl: clamp(6.00rem, calc(5.74rem + 1.30vw), 6.75rem);
+
+  // One-up pairs
+  --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.54vw), 0.56rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.37rem + 0.65vw), 0.88rem);
+  --space-xs-s: clamp(0.75rem, calc(0.62rem + 0.65vw), 1.13rem);
+  --space-s-m: clamp(1.00rem, calc(0.76rem + 1.20vw), 1.69rem);
+  --space-m-l: clamp(1.50rem, calc(1.24rem + 1.30vw), 2.25rem);
+  --space-l-xl: clamp(2.00rem, calc(1.52rem + 2.39vw), 3.38rem);
+  --space-xl-2xl: clamp(3.00rem, calc(2.48rem + 2.61vw), 4.50rem);
+  --space-2xl-3xl: clamp(4.00rem, calc(3.04rem + 4.78vw), 6.75rem);
+}

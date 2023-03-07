@@ -1,0 +1,42 @@
+---
+title: posts
+layout: base.njk
+aliases: ['/blog']
+pagination:
+  data: collections.posts
+  size: 5
+---
+{% set items = pagination.items if not tag else collections[tag] %}
+<div class="page-heading">
+  <h1>{{ title if not tag else 'posts tagged "' + tag + '"' }}</h1>
+</div>
+<div class="content">
+  <ol role="list" class="posts-list">
+    {% for item in items -%}
+    {% set excerpt -%}
+      {%- if item.data.excerptText -%}
+        {{ item.data.excerptText | markdown | trim | safe }}
+      {%- elif item.data.page.excerpt -%}
+        {{ item.data.page.excerpt | markdown | trim | safe }}
+      {%- endif -%}
+    {%- endset %}
+    <li>
+      <article class="content summary">
+        <h2 class="post-title"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+        <p class="post-meta">
+          <time datetime="{{ item.date | dateStamp }}">{{ item.date | dateHuman }}</time>
+          &bull;
+          <span class="readtime">{{ item.content | readtime }} to read</span>
+        </p>
+        {% if item.data.subtitle -%}
+          <p class="post-subtitle">{{ item.data.subtitle }}</p>
+        {%- endif %}
+        {{ excerpt | safe }}
+        <a class="read-more" href="{{ item.url }}">
+          Continue Reading <span aria-hidden="true">→</span>
+        </a>
+      </article>
+    </li>
+    {%- endfor %}
+  </ol>
+</div>

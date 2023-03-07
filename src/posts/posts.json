@@ -1,0 +1,5 @@
+{
+  "layout": "post.njk",
+  "isPost": true,
+  "permalink": "/posts/{% if slug %}{{ slug }}{% else %}{{ title | slugify }}{% endif %}/index.html"
+}

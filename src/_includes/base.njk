@@ -1,0 +1,44 @@
+{% set cachebust = global.cachebust() %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if hidden -%}
+    <meta name="robots" content="noindex">
+    {%- endif %}
+    {% include "partials/graph.njk" %}
+    <title>{% if title and not isHome %}{{ title }} - {% endif %}unremarkable.dev</title>
+    <link rel="preload" as="style" href="/css/style.css?{{ cachebust }}" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css?{{ cachebust }}" />
+    <script src="https://kit.fontawesome.com/3e2794a8b1.js" crossOrigin="anonymous"></script>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <header>
+      <a href="/">unremarkable.dev</a>
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/about">about</a></li>
+            <li><a href="/posts">posts</a></li>
+          </ul>
+        </nav>
+      </aside>
+      {% block content %}{{ content | safe }}{% endblock %}
+    </main>
+    <footer>
+      <div>© Drew Hays {{ global.currentYear() }}</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="/feed.xml">rss</a></li>
+          <li><a href="/links">social</a></li>
+          <li><a href="mailto:drew@unremarkable.dev">email</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
