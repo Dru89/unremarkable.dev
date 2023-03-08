@@ -23,11 +23,13 @@ pagination:
     <li>
       <article class="content summary">
         <h2 class="post-title"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-        <p class="post-meta">
-          <time datetime="{{ item.date | dateStamp }}">{{ item.date | dateHuman }}</time>
-          &bull;
-          <span class="readtime">{{ item.content | readtime }} to read</span>
-        </p>
+        <div class="post-meta">
+          <div class="post--left">
+            <time datetime="{{ item.date | dateStamp }}">{{ item.date | dateHuman }}</time>
+            &bull;
+            <span class="readtime">{{ item.content | readtime }} to read</span>
+          </div>
+        </div>
         {% if item.data.subtitle -%}
           <p class="post-subtitle">{{ item.data.subtitle }}</p>
         {%- endif %}
