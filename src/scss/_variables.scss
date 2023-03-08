@@ -1,26 +1,61 @@
+// shades of gray
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000000;
+
 :root {
-  --background: #fafafa;
-  --body-color: #333333;
-  --body-color-secondary: #5e5e5e;
+  --body-color: #{$gray-900};
+  --body-bg: #{mix($white, $gray-100, 50%)};
+  --body-secondary-color: #{rgba($gray-900, .8)};
+  --body-secondary-bg: #{$gray-200};
+  --body-tertiary-color: #{rgba($gray-900, .6)};
+  --body-tertiary-bg: #{$gray-100};
+  --body-emphasis-color: #{$black};
+  
+  --border-color: #{$gray-400};
+  --border-width: 1px;
+
   --link-color: var(--body-color);
-  --link-color-hover: var(--body-color);
-  --heading-color: var(--body-color);
-  --header-color: var(--body-color);
-  --blockquote-background: rgba(255, 255, 255, 0.5);
-  --blockquote-border-color: #333333;
-  --inline-code-color: #333333;
-  --inline-code-bg: #ebebeb;
+  --link-decoration: underline;
+  --link-font-weight: 600;
+  --link-hover-color: var(--body-color);
+  --link-hover-decoration: underline;
+
+  --blockquote-color: var(--body-secondary-color);
+  --blockquote-bg: var(--body-tertiary-bg);
+  --blockquote-border-color: #{$gray-600};
+
+  --inline-code-color: var(--body-color);
+  --inline-code-bg: var(--body-tertiary-bg);
+
+  --kbd-color: var(--body-color);
+  --kbd-bg: var(--body-secondary-bg);
+
+  --pre-color: var(--body-color);
+  --pre-bg: var(--body-bg);
 
   --table-color: var(--body-color);
   --table-bg: transparent;
-  --table-border-color: #c3c6c9;
-  --table-border-width: 1px;
+  --table-border-color: var(--border-color);
+  --table-border-width: var(--border-width);  
 
-  --body-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --heading-font-family: var(--body-font-family);
-  --header-font-family: var(--monospace-font-family);
+  --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   
+  --body-font-family: var(--font-family-sans-serif);
+  --heading-font-family: var(--body-font-family);
+  --heading-color: var(--body-color);
+  --header-font-family: var(--font-family-monospace);
+  --header-color: var(--body-color);
+
   --max-inline-size: 65ch;
   --font-size-body: var(--step-0);
   --font-size-heading-6: var(--step-0);
@@ -29,5 +64,20 @@
   --font-size-heading-3: var(--step-1);
   --font-size-heading-2: var(--step-2);
   --font-size-heading-1: var(--step-3);
-  --font-size-header: var(--step-5);
+  --font-size-header: var(--step-4);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --body-color: #{$gray-500};
+  --body-bg: #{$gray-900};
+  --body-secondary-color: #{rgba($gray-500, .75)};
+  --body-secondary-bg: #{$gray-800};
+  --body-tertiary-color: #{rgba($gray-500, .5)};
+  --body-tertiary-bg: #{mix($gray-800, $gray-900, 50%)};
+  --body-emphasis-color: #{$white};
+  --border-color: #{$gray-700};
+
+  --blockquote-border-color: #{$gray-400};
 }

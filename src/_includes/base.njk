@@ -13,11 +13,19 @@
     <link rel="preload" as="style" href="/css/style.css?{{ cachebust }}" />
     <link rel="stylesheet" type="text/css" href="/css/style.css?{{ cachebust }}" />
     <script src="https://kit.fontawesome.com/3e2794a8b1.js" crossOrigin="anonymous"></script>
+    <script src="/js/color-mode.js"></script>
     {% block head %}{% endblock %}
   </head>
   <body>
     <header>
-      <a href="/">unremarkable.dev</a>
+      <nav>
+        <ul class="theme-list">
+          <li><span data-theme-value="light" class="far fa-sun"></span></li>
+          <li><span data-theme-value="dark" class="far fa-moon"></span></li>
+          <li><span data-theme-value="auto" class="fa-solid fa-circle-half-stroke"></span></li>
+        </ul>
+      </nav>
+      <a class="site-header" href="/">unremarkable.dev</a>
     </header>
     <main>
       <aside>

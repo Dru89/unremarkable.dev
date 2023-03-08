@@ -17,22 +17,41 @@ body, select {
 }
 
 body {
-  background: var(--background);
+  background: var(--body-bg);
   color: var(--body-color);
   font-size: var(--step-0);
 }
 
 header {
-  text-align: center;
-  font-family: var(--header-font-family);
-  font-size: var(--font-size-header);
-  color: var(--header-color);
-  margin-block-start: var(--space-l);
   padding: var(--space-s-m);
 
-  & a {
-    color: inherit;
+  & .theme-list {
+    display: flex;
+    gap: var(--space-m);
+    justify-content: flex-end;
+
+    & li {
+      cursor: pointer;
+      font-size: var(--step-1);
+    }
+
+    & .active {
+      color: #ffc107;
+    }
+  }
+  
+  & .site-header {
+    margin-block-start: var(--space-l);
+    display: block;
+    color: var(--header-color);
+    font-family: var(--header-font-family);
+    font-size: var(--font-size-header);
+    text-align: center;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -81,5 +100,5 @@ hr {
   width: 80%;
   margin-inline: auto;
   margin-block: var(--space-s);
-  border-block-start: 1px solid #cccccc;
+  border-block-start: var(--border-width) solid var(--border-color);
 }
