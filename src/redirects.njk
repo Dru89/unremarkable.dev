@@ -1,0 +1,12 @@
+---
+permalink: /_redirects 
+eleventyExcludeFromCollections: true
+---
+# Generated redirects using "aliases" in metadata.
+{% for item in collections.all -%}
+  {% if item.data.aliases -%}
+    {% for alias in item.data.aliases -%}
+      {{ alias }} {{ item.url }}{{ "\n" }}
+    {%- endfor %}
+  {%- endif %}
+{%- endfor %}

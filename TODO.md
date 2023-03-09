@@ -1,5 +1,3 @@
-- [ ] Aliases
-- [ ] 404
 - [ ] Tags
 - [ ] Can I find any of my older posts to move over?
 - [ ] Reorganize css.
