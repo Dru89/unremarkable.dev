@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://www.unremarkable.dev/*"
+  to = "https://unremarkable.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://drew.unremarkable.dev/*"
+  to = "https://unremarkable.dev/:splat"
+  status = 302
+  force = true
