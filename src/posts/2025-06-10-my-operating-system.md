@@ -6,7 +6,7 @@ tags: ["leadership", "engineering", "career"]
 ---
 I've been trying to write this blog post for a *really long time*. But every time I've tried to write it, I sound a bit like I'm trying to become some kind of thought leader on LinkedIn. So please, I know it sounds like I'm gearing up to stand in a red circle and give a TEDx talk, but please bear with me a little bit.
 
-I want to take a little bit of time and talk about personal values. Honestly, I never really thought about it as a "value system" until the last year or so, when I was reading through [Sarah Drasner's](https://sarah.dev/) [Engineering Management for the Rest of Us](https://www.engmanagement.dev/). Before then, I wouldn't have given it any sort of time. I wouldn't have really even given it a second thought. It's really just about *who I am*.
+I want to take a little bit of time and talk about personal values. Honestly, I never really thought about it as a "value system" until the last year or so, when I was reading through [Sarah Drasner's](https://sarah.dev/) [Engineering Management for the Rest of Us](https://www.engmanagement.dev/). Before then, I wouldn't have even given it a second thought. It's really just about *who I am*.
 
 <!-- more -->
 
