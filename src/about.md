@@ -27,8 +27,8 @@ I've written a lot of weirdly specific applications over the years:
 
 </div>
 
-These days, I'm a bit more focused on web development. I'm a Staff Engineer and
-Tech Lead at [Stripe] working on [Connect]. Outside of work, I like to write about
+These days, I'm a bit more focused on web development. I'm a Senior Principal
+at [Disney] working on streaming. Outside of work, I like to write about
 Home Automation and obsess a bit over Apple products.
 
 When I'm not building things, I like cooking, watching TV, and spending time
@@ -62,8 +62,7 @@ And so many more people that I'm probably forgetting.
 
 [#runescape]: https://www.tip.it/runescape/pages/view/chat.htm
 [tip.it]: https://tip.it/
-[stripe]: https://stripe.com
-[connect]: https://stripe.com/connect
+[disney]: https://disneyplus.com
 [github]: https://github.com/dru89
 [mastodon]: https://social.lol/@dru89
 [instagram]: https://instagram.com/dru89
