@@ -1,9 +1,8 @@
 ---
 title: My Operating System
 slug: my-operating-system
-date: 2025-06-11T17:18:49-0800
+date: 2025-06-11T22:15:38-0800
 tags: ["leadership", "engineering", "career"]
-hidden: true
 ---
 I've been trying to write this blog post for a *really long time*. But every time I've tried to write it, I sound a bit like I'm trying to become some kind of thought leader on LinkedIn. So please, I know it sounds like I'm gearing up to stand in a red circle and give a TEDx talk, but please bear with me a little bit.
 
